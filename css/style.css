@@ -1,0 +1,96 @@
+body {
+  background-image: url(../img/Trichogaster_trichopterus_female_transparent_background.png);
+  background-repeat: no-repeat;
+  font-family: "Poppins", sans-serif;
+}
+h1,
+h2,
+h3,
+p {
+  margin-bottom: 10px;
+}
+h1,
+h2,
+h3 {
+  font-family: "Sansita Swashed", cursive;
+  color: forestgreen;
+}
+.clear-fix:after {
+  clear: both;
+  display: block;
+  content: "";
+}
+* {
+  line-height: 1.5rem;
+}
+header img {
+  float: left;
+  border-radius: 50%;
+}
+main {
+  clear: left;
+  padding-top: 4%;
+  margin-left: 4%;
+}
+.presentation {
+  padding-top: 5%;
+  padding-left: 30%;
+}
+/*responsive*/
+@media screen and (min-width: 1200px) {
+  #formation,
+  #coordonée {
+    float: left;
+    width: 45%;
+    margin-right: 5%;
+  }
+  #experience,
+  #formulaire {
+    float: left;
+    width: 45%;
+  }
+  body {
+    overflow-x: hidden;
+  }
+}
+.card {
+  background-color: rgba(200, 200, 200, 0.8);
+  margin-top: 10px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 2px 2px 2px 1px forestgreen;
+  border-radius: 0 25px 25px 25px;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+  margin-bottom: 50px;
+  text-decoration: underline;
+}
+h3 {
+  font-size: 1.5rem;
+  text-decoration: underline;
+}
+label {
+  float: left;
+}
+footer {
+  background-color: #000000;
+  color: white;
+  clear: both;
+  min-width: 100%;
+  margin-top: 30px;
+  text-align: end;
+}
+input,
+textarea {
+  min-width: 500px;
+}
+.bouton {
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: forestgreen;
+  color: white;
+}
