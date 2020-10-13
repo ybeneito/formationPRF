@@ -4,17 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CV Beneito</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" type="text/css" href="../css/reset.css" />
     <link rel="stylesheet" type="text/css" href="../css/flex.css" />
     <link rel="stylesheet" href="../fontello/css/fontello.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/d3a877f819.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="../img/favicon.ico" />
   </head>
 
@@ -28,7 +24,7 @@
     </header>
     <main>
       <section id="formation">
-        <h2>Formations:</h2>
+        <h2><i class="fas fa-user-graduate"> </i> Formations:</h2>
 
         <ul class="ul-flex">
           <li>
@@ -47,7 +43,7 @@
       </section>
 
       <section id="experience">
-        <h2>Expériences:</h2>
+        <h2><i class="fas fa-briefcase"> </i> Expériences:</h2>
         <ul class="ul-flex">
           <li>
             <h3>Colleur d'affiches:</h3>
@@ -72,31 +68,33 @@
           </li>
         </ul>
       </section>
-      <section class="coordonée-contact">
-        <section id="coordonée">
-          <h2>Me trouver:</h2>
-          <p>2 rue du 81 eme régiment d'infanterie 34090 Montpellier</p>
-          <p>Téléphone: 06.38.14.82.01</p>
-          <p>Mail: y.beneito@gmail.com</p>
+      <h2><i class="fas fa-address-card"> </i> Me contacter</h2>
+      <section class="double">
+        
+        <section id="coordone">
+          <h3 class="blanc">Me trouver:</h3>
+          <p><i class="fas fa-home"></i> 2 rue du 81 eme régiment d'infanterie 34090 Montpellier</p>
+          <p><i class="fas fa-phone"></i> Téléphone: 06.38.14.82.01</p>
+          <p><i class="fas fa-envelope-open-text"></i> Mail: y.beneito@gmail.com</p>
         </section>
         <section>
-          <h2>Formulaire de contact:</h2>
+          <h3 class="blanc">Formulaire de contact:</h3>
           <form id="formulaire" action="./merci.html" method="post">
-            <label for="nom"><h3>Prenom et Nom</h3></label>
+            <label for="nom"><p>Votre nom:</p></label>
             <input type="text" id="nom" />
 
-            <label for="entreprise"><h3>Entreprise</h3></label>
+            <label for="entreprise"><p>Entreprise:</p></label>
             <input type="text" id="entreprise" />
 
-            <label for="message"><h3>Message</h3></label>
-            <textarea placeholder="Votre message ici" id="message"></textarea>
+            <label for="message"><p>Votre message:</p></label>
+            <textarea placeholder="Votre message ici" id="message" rows="10"></textarea>
             <input class="bouton" type="submit" value="Envoyer" />
           </form>
         </section>
       </section>
     </main>
     <footer>
-      <p>By Yohan Beneito: y.beneito@gmail.com</p>
+      <p>By Yohan Beneito - y.beneito@gmail.com <i class="fas fa-coffee"></i></p>
     </footer>
   </body>
 </html>

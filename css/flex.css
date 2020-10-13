@@ -1,5 +1,9 @@
-*{
-    font-family: "poppins";
+p {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+li {
+    color: white;
 }
 
 header {
@@ -61,28 +65,16 @@ body {
     }
 }
 /*coordonée-contact*/
-.coordonée-contact {
+.double {
     display: flex;
     justify-content: space-around;
 }
-.coordonée-contact > section {
+.double > section {
     border-radius: 8px;
     padding: 15px;
     background-color: rgba(100, 100, 100, 0.7);
     box-shadow:2px 2px 2px 1px rgb(41, 39, 39);
     flex-basis: 40%;
-}
-@media (max-width: 1200px){
-    .coordonée-contact {
-        flex-wrap: wrap;
-        flex-direction: column;
-    }
-    .coordonnée-contact > section {  
-        flex-basis: 90%;
-    }
-    #coordonnée {
-        margin-bottom: 10px;
-    }
 }
 #formulaire {
     display: flex;
@@ -96,35 +88,88 @@ body {
     flex-basis: 60%;
     margin-bottom: 10px;
 }
+textarea {
+    flex-basis: 62%;
+
+}
+.bouton {
+    min-width: 100%;
+    margin-top: 20px;
+    cursor: pointer;
+    padding:6px 0 6px 0;
+	background:#E64B54;
+	color:#fff;
+	border-radius:5px;
+	width:100px;
+	border:none;
+} 
+
 
 footer {
     background-color: black;
     color: white;
     margin-top: 30px;
+    
+}
+footer > p {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 50px;
 }
 
 h1 {
     font-size: 3rem;
     font-weight: bold;
-    font-family: "sansita";
-    margin: 30px;
-    text-decoration: underline;
+    font-family: 'Sansita', sans-serif;
+    color: #E64B54;
+    margin-bottom: 10px;
+    margin-top: 20px;
 }
 h2 {
     font-size: 2rem;
     font-weight: bold;
-    font-family: "sansita";
-    margin: 30px;
-    text-decoration: underline;
+    font-family: 'Sansita', sans-serif;
+    color: #E64B54;
+    margin: 20px 0 10px 45px;
 }
 h3 {
     font-size: 1.5rem;
     font-weight: bold;
-    font-family: "sansita";
-    margin: 10px;
-    text-decoration: underline;
+    font-family: 'Sansita', sans-serif;  
+    margin-bottom: 10px; 
+}
+.blanc {
+    color: white;
 }
 .presentation > p {
     margin: 30px;
+    color: #E64B54;
 }
 
+/*Taille écran plus petites*/
+
+@media (max-width: 576px) { 
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+    .ul-flex {
+        margin: 0 30px;
+    }
+    .double {
+        margin: 0 30px;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .double > section {
+        margin-bottom: 20px;
+    }
+    form {
+        flex-direction: column;
+    }
+
+
+
+
+}
