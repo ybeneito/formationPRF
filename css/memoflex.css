@@ -1,0 +1,132 @@
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+}
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+}
+p {
+    font-size: 1.5rem;
+}
+input {
+    cursor: pointer;
+}
+
+header {
+    display: flex;
+    background-color: #6C757D;
+    justify-content: center;
+    align-items: center;
+}
+header > h1 {
+    color: white;
+}
+header > p {
+    margin-left: 50px;
+    color: #28A745;
+}
+.selection {
+    display: flex;
+    justify-content: center;
+    margin: 15px auto;
+    width: 80%;
+}
+.selection > button {
+    margin-left: 20px;
+    background-color: #6C757D;
+    color: white;
+    border: none;
+    border-radius: 3px;
+}
+#plus {
+    background: #218838;
+    color: white;
+    border: none;
+    padding: 5px;
+    font-size: 1.5rem;
+}
+.titre {
+    margin-left: 20px;
+}
+
+.principal {
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-around;
+
+}
+.column {
+    display: flex;
+    flex-direction: column;
+    max-width: 20%;
+    flex-grow: 1;
+    flex-basis: 20%;
+}
+.headercol {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+
+    
+}
+.contentcol {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    
+}
+.contentcol > article {
+    padding: 10px;
+    margin: 5px;
+    background: #6C757D;
+    border-radius: 3px;
+    color: white;
+}
+.headbloc {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.contentbloc {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.footbloc {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footbloc > p {
+    cursor: pointer;
+}
+.footbloc > button {
+    background: #E0A800;
+    color: black;
+    border: none;
+    padding: 3px;
+    cursor: pointer;
+}
+footer {
+    margin-top: 50px;
+    background-color: #6C757D;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* responsive */
+@media (max-width: 576px) {
+    .selection {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .principal {
+        flex-wrap: nowrap;
+        width: 400vw;
+    }
+}
