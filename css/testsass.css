@@ -1,8 +1,14 @@
 @charset "UTF-8";
 /*définition d'une mixin (fonction) */
-body {
-  font-size: 2em; }
-  body main nav ul li {
-    border: 1px solid red; }
+body main > button {
+  background-color: #458bb4 !important; }
+body main nav ul li {
+  border: 1px solid red; }
+
+body main > button, body main nav ul li button {
+  background-color: #b44545;
+  border: 1px solid black;
+  padding: 15px;
+  border-radius: 8px; }
 
 /*# sourceMappingURL=testsass.css.map */
