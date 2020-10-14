@@ -62,11 +62,15 @@ header > p {
 .titre {
   margin-left: 20px;
 }
+main {
+  overflow-x: scroll;
+}
 
 .principal {
   display: flex;
   margin-top: 30px;
   justify-content: space-around;
+
 }
 .column {
   display: flex;
@@ -142,9 +146,9 @@ footer {
   }
   .principal {
     width: 400vw;
-    overflow-x: scroll;
   }
-  footer {
-    
+  main {
+
   }
+ 
 }
