@@ -1,0 +1,18 @@
+$primary-color: #F8F8F8;
+$font-size: 2em;
+/*définition d'une mixin (fonction) */
+@mixin border($border_color) {
+    border: 1px solid $border_color;    
+}
+body {  
+    font-size: $font-size;
+    main {
+        nav{
+            ul {
+                li {
+                    @include border(red);
+                }
+            }
+        }
+    }
+}

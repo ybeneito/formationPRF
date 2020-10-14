@@ -1,0 +1,8 @@
+@charset "UTF-8";
+/*définition d'une mixin (fonction) */
+body {
+  font-size: 2em; }
+  body main nav ul li {
+    border: 1px solid red; }
+
+/*# sourceMappingURL=testsass.css.map */
