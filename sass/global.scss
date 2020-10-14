@@ -2,4 +2,8 @@
 %flexcenter {
     display:flex;
     justify-content: center;
-  }
+}
+%flexcol {
+  display: flex;
+  flex-direction: column;
+}

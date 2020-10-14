@@ -1,6 +1,7 @@
 @import "variables.scss";
 @import "global.scss";
-
+@import "_breackpoint.scss";
+@import "_media.scss";
 
 /*polices*/
 h1 {
@@ -22,35 +23,33 @@ p {
 body {
   max-width: 100vw;
   @media (max-width: 576px) {
-      max-height: 100vh;
-      overflow: hidden;
-    }
+    max-height: 100vh;
+    overflow: hidden;
+  }
 }
 
 header {
-  /*display: flex;
-  justify-content: center;*/
-  @extend %flexcenter; 
+  @extend %flexcenter;
   background-color: $grey;
   align-items: center;
   > h1 {
-    color:  $white;
+    color: $white;
   }
   > p {
     margin-left: 50px;
     color: $green;
   }
-  @media (max-width: 576px) {
-      width: 100%;
-      position: fixed;
-      left: 0;
-      right: 0;
-      top: 0;
-    }
+  @include sm {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+  }
 }
 
 .selection {
-  @extend %flexcenter; 
+  @extend %flexcenter;
   margin: 15px auto;
   width: 80%;
   > button {
@@ -88,13 +87,12 @@ main {
   justify-content: space-around;
   margin-top: 30px;
   @media (max-width: 576px) {
-      width: 400vw;
-    }
+    width: 400vw;
+  }
 }
 
 .column {
-  display: flex;
-  flex-direction: column;
+  @extend %flexcol;
   max-width: 20%;
   flex-grow: 1;
   flex-basis: 20%;
@@ -107,13 +105,12 @@ main {
     }
   }
   .contentcol {
-    display: flex;
-    flex-direction: column;
+    @extend %flexcol;
     flex-wrap: nowrap;
     > article {
       padding: 10px;
       margin: 5px;
-      background: #6c757d;
+      background: $grey;
       border-radius: 3px;
       color: $white;
     }
@@ -123,9 +120,9 @@ main {
     justify-content: space-between;
     cursor: pointer;
   }
-  
+
   .contentbloc {
-    @extend %flexcenter; 
+    @extend %flexcenter;
     flex-wrap: wrap;
   }
   .footbloc {
@@ -150,6 +147,5 @@ footer {
   margin-top: 50px;
   background-color: $grey;
   color: $white;
-  @extend %flexcenter; 
+  @extend %flexcenter;
 }
-
