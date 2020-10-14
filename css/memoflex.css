@@ -6,8 +6,12 @@ h2 {
   font-family: "Poppins", sans-serif;
   font-size: 2rem;
 }
-p {
+h3 {
+  font-family: "Poppins", sans-serif;
   font-size: 1.5rem;
+}
+p {
+  font-size: 1.25rem;
 }
 input {
   cursor: pointer;
@@ -125,8 +129,12 @@ footer {
 
 /* responsive */
 @media (max-width: 576px) {
+  .body {
+    max-height: 100vh;
+    overflow: hidden;
+  }
   .header {
-    max-width: 100%;
+    width: 100%;
     position: fixed;
     left: 0;
     right: 0;
@@ -135,5 +143,8 @@ footer {
   .principal {
     width: 400vw;
     overflow-x: scroll;
+  }
+  footer {
+    
   }
 }
