@@ -1,0 +1,85 @@
+body {
+  overflow-x: hidden;
+}
+
+nav {
+  border-bottom: 1px solid grey;
+  .col {
+    ul {
+      li {
+        &:hover {
+          border-bottom: 3px solid #fe6a23;
+          cursor: pointer;
+        }
+      }
+    }
+    button {
+      border-radius: 44px;
+    }
+  }
+}
+
+main {
+  .section1 {
+    background-image: url(../../img/shadow/bgshadow.jpg);
+    padding: 0 250px;
+    padding-top: 150px;
+    div {
+      button {
+        border-radius: 44px;
+      }
+    }
+    ::after {
+      content: "";
+      position: absolute;
+      bottom: -50px;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url(https://statics.shadow.tech/svg/curve.svg);
+      background-repeat: no-repeat;
+      background-position: bottom center;
+      background-size: 103%, auto;
+      z-index: 1;
+    }
+  }
+
+  .section2 {
+    padding-top: 75px;
+    row {
+      .titre {
+        h2 {
+          &:hover {
+            border-bottom: 3px solid #fe6a23;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+
+  .section3 {
+    margin-top: 150px;
+    padding-top: 100px;
+  }
+  .section5 {
+    padding-top: 150px;
+  }
+  .section6 {
+    background-color: #fe6a23;
+    padding-top: 100px;
+    .container {
+      #preco {
+        border-radius: 44px;
+        color: #fe6a23;
+      }
+    }
+  }
+  .section7 {
+    row {
+      #article1 {
+        background-image: url(https://images.prismic.io/shadow-community/fe2cc227-933c-48bb-9ab3-5d9d035f477e_sgc-blog-header.jpg?auto=compress,format&rect=0,0,885,379&w=500&h=214);
+      }
+    }
+  }
+}
