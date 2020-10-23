@@ -11,6 +11,12 @@ nav {
           border-bottom: 3px solid #fe6a23;
           cursor: pointer;
         }
+        a:link {
+          @media (max-width: 767.98px) { 
+            display: none;
+          }
+          text-decoration: none;
+        }
       }
     }
     button {
@@ -21,6 +27,7 @@ nav {
 
 main {
   .section1 {
+    position: relative;
     background-image: url(../../img/shadow/bgshadow.jpg);
     padding: 0 250px;
     padding-top: 150px;
@@ -32,7 +39,7 @@ main {
     ::after {
       content: "";
       position: absolute;
-      bottom: -50px;
+      bottom: 0;
       left: 0;
       width: 100%;
       height: 100%;
@@ -43,7 +50,6 @@ main {
       z-index: 1;
     }
   }
-
   .section2 {
     padding-top: 75px;
     row {
@@ -56,11 +62,39 @@ main {
         }
       }
     }
+    .style {
+      position: relative;
+      padding-top: 150px;
+      background-color: #161e28;
+      &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: "";
+        border-style: solid;
+        border-width: 0 0 50px 100vw;
+        border-color: transparent transparent transparent #fff;
+      }
+    }
   }
-
   .section3 {
-    margin-top: 150px;
-    padding-top: 100px;
+    .Gpu {
+      -webkit-animation: cZxgpV 4s linear infinite;
+      animation: cZxgpV 4s linear infinite;
+      -webkit-transform-origin: 33.2px 50px;
+      -ms-transform-origin: 33.2px 50px;
+      transform-origin: 33.2px 50px;
+    }
+  }
+  .section4 {
+    div {
+      row {
+        i {
+          bottom: 20px;
+          left: 20px;
+        }
+      }
+    }
   }
   .section5 {
     padding-top: 150px;
@@ -76,10 +110,80 @@ main {
     }
   }
   .section7 {
-    row {
+    background-color: #161e28;
+    .row1 {
+      height: 100%;
       #article1 {
-        background-image: url(https://images.prismic.io/shadow-community/fe2cc227-933c-48bb-9ab3-5d9d035f477e_sgc-blog-header.jpg?auto=compress,format&rect=0,0,885,379&w=500&h=214);
+        background: linear-gradient(transparent, black),
+          url(https://images.prismic.io/shadow-community/fe2cc227-933c-48bb-9ab3-5d9d035f477e_sgc-blog-header.jpg?auto=compress,format&rect=0,0,885,379&w=500&h=214);
+      }
+      #article2 {
+        background: linear-gradient(transparent, black),
+          url(https://images.prismic.io/shadow-community/e26e2438-fab2-4e76-92f5-8bd9f3629253_unifiedclient3_4_fr.jpg?auto=compress,format&rect=0,0,885,379&w=500&h=214);
+      }
+      #article3 {
+        background: linear-gradient(transparent, black),
+          url(https://images.prismic.io/shadow-community/0591eab3-7f84-4540-a88b-5332a6d5c68a_Header_Blog_Twitch.jpg?auto=compress,format&rect=0,0,885,379&w=500&h=214);
+      }
+    }
+    .row2 {
+      padding: 0 100px;
+      padding-top: 100px;
+      div {
+        input {
+          background-color: #2d3b4b;
+          border: none;
+        }
+        button {
+          border-radius: 44px;
+          &:hover{
+            background-color: white;
+            color: #2d3b4b;
+          }
+        }
+       
+        section {
+          .fa-discord {
+            &:hover {
+              color: #6f85d5;
+              cursor: pointer;
+            }
+          }
+          .fa-facebook-square {
+            &:hover {
+              color: #3a5794;
+              cursor: pointer;
+            }
+          }
+          .fa-instagram-square {
+            &:hover {
+              color: #9131bc;
+              cursor: pointer;
+            }
+          }
+          .fa-twitter {
+            &:hover {
+              color: #1c9cea;
+              cursor: pointer;
+            }
+          }
+          .fa-youtube {
+            &:hover {
+              color: #d52824;
+              cursor: pointer;
+            }
+          }
+          .fa-twitch {
+            &:hover {
+              color: #8c45f7;
+              cursor: pointer;
+            }
+          }
+        }
       }
     }
   }
+}
+footer {
+  padding: 0 160px;
 }

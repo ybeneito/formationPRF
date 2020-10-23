@@ -7773,10 +7773,16 @@ nav {
   nav .col ul li:hover {
     border-bottom: 3px solid #fe6a23;
     cursor: pointer; }
+  nav .col ul li a:link {
+    text-decoration: none; }
+    @media (max-width: 767.98px) {
+      nav .col ul li a:link {
+        display: none; } }
   nav .col button {
     border-radius: 44px; }
 
 main .section1 {
+  position: relative;
   background-image: url(../../img/shadow/bgshadow.jpg);
   padding: 0 250px;
   padding-top: 150px; }
@@ -7785,7 +7791,7 @@ main .section1 {
   main .section1 ::after {
     content: "";
     position: absolute;
-    bottom: -50px;
+    bottom: 0;
     left: 0;
     width: 100%;
     height: 100%;
@@ -7799,9 +7805,27 @@ main .section2 {
   main .section2 row .titre h2:hover {
     border-bottom: 3px solid #fe6a23;
     cursor: pointer; }
-main .section3 {
-  margin-top: 150px;
-  padding-top: 100px; }
+  main .section2 .style {
+    position: relative;
+    padding-top: 150px;
+    background-color: #161e28; }
+    main .section2 .style::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: "";
+      border-style: solid;
+      border-width: 0 0 50px 100vw;
+      border-color: transparent transparent transparent #fff; }
+main .section3 .Gpu {
+  -webkit-animation: cZxgpV 4s linear infinite;
+  animation: cZxgpV 4s linear infinite;
+  -webkit-transform-origin: 33.2px 50px;
+  -ms-transform-origin: 33.2px 50px;
+  transform-origin: 33.2px 50px; }
+main .section4 div row i {
+  bottom: 20px;
+  left: 20px; }
 main .section5 {
   padding-top: 150px; }
 main .section6 {
@@ -7810,5 +7834,47 @@ main .section6 {
   main .section6 .container #preco {
     border-radius: 44px;
     color: #fe6a23; }
+main .section7 {
+  background-color: #161e28; }
+  main .section7 .row1 {
+    height: 100%; }
+    main .section7 .row1 #article1 {
+      background: linear-gradient(transparent, black), url(https://images.prismic.io/shadow-community/fe2cc227-933c-48bb-9ab3-5d9d035f477e_sgc-blog-header.jpg?auto=compress,format&rect=0,0,885,379&w=500&h=214); }
+    main .section7 .row1 #article2 {
+      background: linear-gradient(transparent, black), url(https://images.prismic.io/shadow-community/e26e2438-fab2-4e76-92f5-8bd9f3629253_unifiedclient3_4_fr.jpg?auto=compress,format&rect=0,0,885,379&w=500&h=214); }
+    main .section7 .row1 #article3 {
+      background: linear-gradient(transparent, black), url(https://images.prismic.io/shadow-community/0591eab3-7f84-4540-a88b-5332a6d5c68a_Header_Blog_Twitch.jpg?auto=compress,format&rect=0,0,885,379&w=500&h=214); }
+  main .section7 .row2 {
+    padding: 0 100px;
+    padding-top: 100px; }
+    main .section7 .row2 div input {
+      background-color: #2d3b4b;
+      border: none; }
+    main .section7 .row2 div button {
+      border-radius: 44px; }
+      main .section7 .row2 div button:hover {
+        background-color: white;
+        color: #2d3b4b; }
+    main .section7 .row2 div section .fa-discord:hover {
+      color: #6f85d5;
+      cursor: pointer; }
+    main .section7 .row2 div section .fa-facebook-square:hover {
+      color: #3a5794;
+      cursor: pointer; }
+    main .section7 .row2 div section .fa-instagram-square:hover {
+      color: #9131bc;
+      cursor: pointer; }
+    main .section7 .row2 div section .fa-twitter:hover {
+      color: #1c9cea;
+      cursor: pointer; }
+    main .section7 .row2 div section .fa-youtube:hover {
+      color: #d52824;
+      cursor: pointer; }
+    main .section7 .row2 div section .fa-twitch:hover {
+      color: #8c45f7;
+      cursor: pointer; }
+
+footer {
+  padding: 0 160px; }
 
 /*# sourceMappingURL=shadow.css.map */

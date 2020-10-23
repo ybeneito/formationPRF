@@ -6,21 +6,34 @@
     <title>Yohan Shadow</title>
     <link rel="stylesheet" href="../css/shadow.css" />
     <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
+    <script
       src="https://kit.fontawesome.com/d3a877f819.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="icon" href="https://shadow.tech/favicon.ico" />
   </head>
   <body>
-    <head>
+    <header>
       <nav class="row nav navbar bg-secondary d-flex fixed-top">
         <div class="col col-2 text-white">
-          <svg width="130" height="28" viewBox="0 0 463 100">
-            <path
-              d="M49.951 0C22.364 0 0 22.364 0 49.951 0 64.58 6.289 77.74 16.31 86.874a18.527 18.527 0 0 1-.833-5.51c0-10.24 8.3-18.54 18.539-18.54 10.238 0 18.538 8.3 18.538 18.54 0 8.143-5.253 15.056-12.555 17.545 3.217.65 6.544.993 9.952.993 27.587 0 49.951-22.364 49.951-49.95C99.902 22.363 77.538 0 49.951 0m92.842 45.49c-6.636-2.883-9.34-4.507-9.34-9.027 0-3.827 2.81-6.397 6.989-6.397 3.577 0 5.958 1.287 7.493 4.048l.678 1.22c.282.509.923.692 1.431.41l3.605-2.006c.503-.28.688-.913.413-1.42l-.656-1.212c-2.527-4.672-7.132-7.246-12.964-7.246-7.559 0-13.26 5.447-13.26 12.67 0 8.357 5.894 11.571 12.997 14.625 8.356 3.668 10.397 5.736 10.397 10.536 0 4.91-3.544 7.84-9.479 7.84-5.826 0-10.067-2.994-12.264-8.66l-.52-1.338a1.052 1.052 0 0 0-1.388-.589l-3.786 1.593a1.052 1.052 0 0 0-.583 1.324l.445 1.244c2.872 8.028 9.468 12.63 18.096 12.63 9.567 0 15.749-5.512 15.749-14.044 0-9.269-6.086-12.688-14.053-16.202m59.641 9.771H179.6a1.052 1.052 0 0 1-1.052-1.053V24.86c0-.581-.471-1.052-1.052-1.052h-4.342c-.58 0-1.052.47-1.052 1.052v49.87c0 .58.471 1.051 1.052 1.051h4.342c.58 0 1.052-.47 1.052-1.051V62.69c0-.58.47-1.052 1.052-1.052h22.835c.581 0 1.052.471 1.052 1.052v12.04c0 .58.471 1.051 1.052 1.051h4.342c.58 0 1.052-.47 1.052-1.051V24.86c0-.581-.471-1.052-1.052-1.052h-4.342c-.58 0-1.052.47-1.052 1.052v29.348c0 .581-.47 1.052-1.052 1.052m38.405-1.507l6.337-16.028c.35-.886 1.606-.886 1.957 0l6.337 16.028a1.052 1.052 0 0 1-.978 1.438h-12.675a1.052 1.052 0 0 1-.978-1.438zm8.2-29.946h-2.485c-.43 0-.818.263-.977.663l-19.819 49.87c-.274.69.235 1.44.978 1.44h4.63c.432 0 .82-.262.978-.662l5.13-12.885c.159-.4.546-.663.977-.663h19.406c.431 0 .818.262.978.663l5.129 12.885c.16.4.547.662.977.662h4.632c.743 0 1.252-.75.977-1.44l-19.819-49.87a1.051 1.051 0 0 0-.977-.663h-.715zm43.785 44.544V31.237c0-.58.47-1.052 1.051-1.052h8.084c12.573 0 20.382 7.526 20.382 19.642 0 12.075-7.784 19.576-20.315 19.576h-8.15c-.581 0-1.052-.47-1.052-1.052m9.27-44.544H287.43c-.581 0-1.052.47-1.052 1.052v49.87c0 .58.471 1.051 1.052 1.051h14.732c15.966 0 26.693-10.43 26.693-25.953 0-15.564-10.755-26.02-26.761-26.02m64.27 6.259c10.936 0 19.504 8.681 19.504 19.765 0 11.23-8.386 19.7-19.504 19.7-11.156 0-19.57-8.47-19.57-19.7 0-11.084 8.596-19.765 19.57-19.765m0-6.206c-14.49 0-25.84 11.407-25.84 25.97 0 14.527 11.35 25.906 25.84 25.906 14.453 0 25.774-11.379 25.774-25.905 0-14.564-11.321-25.971-25.774-25.971m89.593.625L441.96 61.362c-.343.905-1.624.905-1.967 0L426 24.485a1.053 1.053 0 0 0-.983-.678h-4.615c-.736 0-1.245.737-.983 1.426l7.048 18.536c.091.24.091.506 0 .747l-6.393 16.846c-.344.905-1.624.905-1.967 0l-13.995-36.877a1.052 1.052 0 0 0-.984-.678h-4.614c-.737 0-1.245.737-.983 1.426l18.96 49.87c.156.407.547.677.984.677h3.231c.437 0 .828-.27.984-.678l7.361-19.363c.344-.904 1.623-.904 1.967 0l7.362 19.363c.155.408.546.678.983.678h3.231c.437 0 .828-.27.983-.678l18.961-49.87a1.052 1.052 0 0 0-.983-1.425h-4.615c-.437 0-.828.27-.983.678"
-              fill-rule="evenodd"
-              fill="#FFF"
-            ></path>
-          </svg>
+          <a href=""
+            ><svg width="130" height="28" viewBox="0 0 463 100">
+              <path
+                d="M49.951 0C22.364 0 0 22.364 0 49.951 0 64.58 6.289 77.74 16.31 86.874a18.527 18.527 0 0 1-.833-5.51c0-10.24 8.3-18.54 18.539-18.54 10.238 0 18.538 8.3 18.538 18.54 0 8.143-5.253 15.056-12.555 17.545 3.217.65 6.544.993 9.952.993 27.587 0 49.951-22.364 49.951-49.95C99.902 22.363 77.538 0 49.951 0m92.842 45.49c-6.636-2.883-9.34-4.507-9.34-9.027 0-3.827 2.81-6.397 6.989-6.397 3.577 0 5.958 1.287 7.493 4.048l.678 1.22c.282.509.923.692 1.431.41l3.605-2.006c.503-.28.688-.913.413-1.42l-.656-1.212c-2.527-4.672-7.132-7.246-12.964-7.246-7.559 0-13.26 5.447-13.26 12.67 0 8.357 5.894 11.571 12.997 14.625 8.356 3.668 10.397 5.736 10.397 10.536 0 4.91-3.544 7.84-9.479 7.84-5.826 0-10.067-2.994-12.264-8.66l-.52-1.338a1.052 1.052 0 0 0-1.388-.589l-3.786 1.593a1.052 1.052 0 0 0-.583 1.324l.445 1.244c2.872 8.028 9.468 12.63 18.096 12.63 9.567 0 15.749-5.512 15.749-14.044 0-9.269-6.086-12.688-14.053-16.202m59.641 9.771H179.6a1.052 1.052 0 0 1-1.052-1.053V24.86c0-.581-.471-1.052-1.052-1.052h-4.342c-.58 0-1.052.47-1.052 1.052v49.87c0 .58.471 1.051 1.052 1.051h4.342c.58 0 1.052-.47 1.052-1.051V62.69c0-.58.47-1.052 1.052-1.052h22.835c.581 0 1.052.471 1.052 1.052v12.04c0 .58.471 1.051 1.052 1.051h4.342c.58 0 1.052-.47 1.052-1.051V24.86c0-.581-.471-1.052-1.052-1.052h-4.342c-.58 0-1.052.47-1.052 1.052v29.348c0 .581-.47 1.052-1.052 1.052m38.405-1.507l6.337-16.028c.35-.886 1.606-.886 1.957 0l6.337 16.028a1.052 1.052 0 0 1-.978 1.438h-12.675a1.052 1.052 0 0 1-.978-1.438zm8.2-29.946h-2.485c-.43 0-.818.263-.977.663l-19.819 49.87c-.274.69.235 1.44.978 1.44h4.63c.432 0 .82-.262.978-.662l5.13-12.885c.159-.4.546-.663.977-.663h19.406c.431 0 .818.262.978.663l5.129 12.885c.16.4.547.662.977.662h4.632c.743 0 1.252-.75.977-1.44l-19.819-49.87a1.051 1.051 0 0 0-.977-.663h-.715zm43.785 44.544V31.237c0-.58.47-1.052 1.051-1.052h8.084c12.573 0 20.382 7.526 20.382 19.642 0 12.075-7.784 19.576-20.315 19.576h-8.15c-.581 0-1.052-.47-1.052-1.052m9.27-44.544H287.43c-.581 0-1.052.47-1.052 1.052v49.87c0 .58.471 1.051 1.052 1.051h14.732c15.966 0 26.693-10.43 26.693-25.953 0-15.564-10.755-26.02-26.761-26.02m64.27 6.259c10.936 0 19.504 8.681 19.504 19.765 0 11.23-8.386 19.7-19.504 19.7-11.156 0-19.57-8.47-19.57-19.7 0-11.084 8.596-19.765 19.57-19.765m0-6.206c-14.49 0-25.84 11.407-25.84 25.97 0 14.527 11.35 25.906 25.84 25.906 14.453 0 25.774-11.379 25.774-25.905 0-14.564-11.321-25.971-25.774-25.971m89.593.625L441.96 61.362c-.343.905-1.624.905-1.967 0L426 24.485a1.053 1.053 0 0 0-.983-.678h-4.615c-.736 0-1.245.737-.983 1.426l7.048 18.536c.091.24.091.506 0 .747l-6.393 16.846c-.344.905-1.624.905-1.967 0l-13.995-36.877a1.052 1.052 0 0 0-.984-.678h-4.614c-.737 0-1.245.737-.983 1.426l18.96 49.87c.156.407.547.677.984.677h3.231c.437 0 .828-.27.984-.678l7.361-19.363c.344-.904 1.623-.904 1.967 0l7.362 19.363c.155.408.546.678.983.678h3.231c.437 0 .828-.27.983-.678l18.961-49.87a1.052 1.052 0 0 0-.983-1.425h-4.615c-.437 0-.828.27-.983.678"
+                fill-rule="evenodd"
+                fill="#FFF"
+              ></path>
+            </svg>
+          </a>
         </div>
         <div class="col col-6 text-white pt-3">
           <ul class="row list-unstyled d-flex justify-content-start">
@@ -36,28 +49,35 @@
           <button type="button" class="btn btn-warning px-4">
             PRÉ-COMMANDES
           </button>
-          <h4><i class="far fa-user-circle text-white"> </i></h4>
+          <a href="" class="h4"
+            ><i class="far fa-user-circle text-white"> </i
+          ></a>
         </div>
       </nav>
-    </head>
+    </header>
     <main>
       <section class="section1">
         <div class="container d-flex flex-column align-items-center text-white">
           <h1 class="font-weight-bold">
             Transforme tes appareils en pc gaming
           </h1>
-          <p class="pt-5">
+          <p class="pt-5 text-center">
             Avec Shadow, fais tourner tous les deniers jeux et logiciels sur ton
             vieux PC, ton Mac, ou ta TV. Plus besoin de racheter de matériel, il
             suffit de télécharge l'app. A partir de 12,99€/mois seulement.
             Rejoins la révolution.
           </p>
-          <button type="button" class="btn btn-warning mt-5">
+          <button class="btn btn-warning mt-5">
             Précommande maintenant <i class="fas fa-long-arrow-alt-right"></i>
           </button>
+
           <div class="p-5">
             <iframe
-              src="https://www.youtube.com/watch?v=XFYAQDYo_rY"
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/XFYAQDYo_rY"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
             ></iframe>
           </div>
@@ -69,14 +89,14 @@
             <h2>Joue aux jeux de ton choix</h2>
           </div>
           <div class="col col-4 px-4 titre">
-            <h2>La meilleures solution de cloud gaming</h2>
+            <h2 class="text-muted">La meilleures solution de cloud gaming</h2>
           </div>
           <div class="col col-4 px-4 titre">
-            <h2>Plus que du cloud gaming</h2>
+            <h2 class="text-muted">Plus que du cloud gaming</h2>
           </div>
         </row>
         <row
-          class="row col-12 d-flex justify-content-center align-items-center mt-5 container"
+          class="row col-12 d-flex justify-content-center align-items-center mt-5 mb-5 pb-5 container"
         >
           <div class="col col-6">
             <img src="../img/shadow/screen.webp" width="100%" />
@@ -94,11 +114,14 @@
             </p>
           </div>
         </row>
+        <div class="style"></div>
       </section>
       <section class="section3 bg-secondary d-flex flex-column">
         <row class="container d-flex justify-content-center">
-          <div class="col col-7 d-flex flex-row">
-            <div class="d-flex flex-wrap align-items-center">
+          <div class="col col-5 d-flex flex-row align-items-center">
+            <div
+              class="d-flex flex-wrap justify-content-center align-items-center"
+            >
               <div class="icon">
                 <svg width="100" height="100" viewBox="0 0 100 100">
                   <defs>
@@ -352,51 +375,57 @@
           <h3>Ce que dit la communauté</h3>
           <p>ils aiment Shadow et on les aime aussi</p>
           <row class="d-flex mt-5">
-            <article class="card col col-4 p-5 mx-2">
+            <article class="card col col-4 p-5 mx-2 position-relative">
               <h4>@UltearIV</h4>
-              <p>
+              <p class="pt-2">
                 Heureusement que @Shadow_France est là pendant cette période
                 difficile
               </p>
+              <i class="fab fa-twitter pt-5 text-info position-absolute"></i>
             </article>
-            <article class="card col col-4 p-5 mx-2">
+            <article class="card col col-4 p-5 mx-2 position-relative">
               <h4>@alexandrepillot</h4>
-              <p>
+              <p class="pt-2">
                 J’ai testé tous les services du genre, résultat : @Shadow_France
                 est LARGEMENT au dessus à l’heure actuelle.
               </p>
+              <i class="fab fa-twitter pt-5 text-info position-absolute"></i>
             </article>
-            <article class="card col col-4 p-5 mx-2">
+            <article class="card col col-4 p-5 mx-2 position-relative">
               <h4>@LucHedin</h4>
-              <p>
+              <p class="pt-2">
                 Un petit #MonsterHunterWorld (avec HR texture pack) sur #Shadow
                 depuis mon #Note10 Rendu nickel aussi sur ipad pro en 120 Hz.
                 Manette automatiquement reconnue. @Shadow_France
               </p>
+              <i class="fab fa-twitter pt-5 text-info position-absolute"></i>
             </article>
           </row>
           <row class="d-flex mt-5">
-            <article class="card col col-4 p-5 mx-2">
+            <article class="card col col-4 p-5 mx-2 position-relative">
               <h4>@DemeyChristophe</h4>
-              <p>
+              <p class="pt-2">
                 Quoi de mieux que de commencer sa journée en allumant son Shadow
                 😁 @Shadow_France vous êtes les meilleurs 💻🎮
               </p>
+              <i class="fab fa-twitter pt-5 text-info position-absolute"></i>
             </article>
-            <article class="card col col-4 p-5 mx-2">
+            <article class="card col col-4 p-5 mx-2 position-relative">
               <h4>@RElchinger</h4>
-              <p>
+              <p class="pt-2">
                 Merci @Shadow_France de pouvoir jouer à Project Cars 2 sur
                 Surface Go en terrasse.
               </p>
+              <i class="fab fa-twitter pt-5 text-info position-absolute"></i>
             </article>
-            <article class="card col col-4 p-5 mx-2">
+            <article class="card col col-4 p-5 mx-2 position-relative">
               <h4>@oliveirasilvaa</h4>
-              <p>
+              <p class="pt-2">
                 @MSFSofficial 2020 dans ma nouvelle tv @SamsungFR t800 8k avec
                 l’application @Shadow_France qui tourne dans une @appletv 4K, et
                 avec la manette @XboxFR. Quelle merveille 😍
               </p>
+              <i class="fab fa-twitter pt-5 text-info position-absolute"></i>
             </article>
           </row>
         </div>
@@ -405,42 +434,44 @@
         <div class="container">
           <row class="d-flex text-white d-flex justify-content-around">
             <div class="col col-6 d-flex flex-column align-items-center">
-              <q class="h1">Shadow va bien au-delà du jeu vidéo.</q>
-              <p>Gamekult</p>
+              <q class="h2 text-center">Shadow va bien au-delà du jeu vidéo.</q>
+              <p class="pt-2 text-muted">Gamekult</p>
             </div>
             <div class="col col-6 d-flex flex-column align-items-center">
-              <q class="h1">L'ordinateur du futur existe. Shadow l'a créé.</q>
-              <p>Le Journal du Dimanche</p>
+              <q class="h2 text-center"
+                >L'ordinateur du futur existe. Shadow l'a créé.</q
+              >
+              <p class="pt-2 text-muted">Le Journal du Dimanche</p>
             </div>
           </row>
           <row class="d-flex text-white d-flex justify-content-around mt-5">
             <div class="col col-6 d-flex flex-column align-items-center">
-              <q class="h1"
-                >Shadow devance la plupart des services de cloud gaming
+              <q class="h2 text-center">
+                Shadow devance la plupart des services de cloud gaming
                 actuellement disponible.</q
               >
-              <p>JeuxVideo.com</p>
+              <p class="pt-2 text-muted">JeuxVideo.com</p>
             </div>
             <div class="col col-6 d-flex flex-column align-items-center">
-              <q class="h1">Le meilleur service de cloud gaming.</q>
-              <p>Clubic</p>
+              <q class="h2 text-center">Le meilleur service de cloud gaming.</q>
+              <p class="pt-2 text-muted">Clubic</p>
             </div>
           </row>
-          <row class="row mt-5">
-            <div class="col col-3">
+          <row class="row mt-5 d-flex justify-content-around container px-5">
+            <div class="col col-2">
               <img width="100%" src="../img/shadow/numeriques.webp" alt="" />
             </div>
-            <div class="col col-3">
+            <div class="col col-2">
               <img width="100%" src="../img/shadow/canal.webp" alt="" />
             </div>
-            <div class="col col-3">
+            <div class="col col-2">
               <img width="100%" src="../img/shadow/numerama.webp" alt="" />
             </div>
-            <div class="col col-3">
+            <div class="col col-2">
               <img width="100%" src="../img/shadow/capital.webp" alt="" />
             </div>
           </row>
-          <row class="d-flex justify-content-center">
+          <row class="d-flex justify-content-center pb-5">
             <button type="button" class="btn btn-secondary mt-5">
               À propos de shadow <i class="fas fa-long-arrow-alt-right"></i>
             </button>
@@ -460,16 +491,186 @@
         </div>
       </section>
       <section class="section7">
-        <row>
-          <article id="article1"class="col-4">
-            
+        <row class="d-flex text-white pt-5 row1">
+          <article id="article1" class="col-4">
+            <button class="btn btn-warning mt-5">#TEAMSHADOW</button>
+            <h3>La grande histoire de Shadow Gaming Communautaire</h3>
           </article>
-          <article id="article2"class="col-4"></article>
-          <article id="article3"class="col-4"></article>
+          <article id="article2" class="col-4">
+            <button class="btn btn-warning mt-5">MISE À JOUR</button>
+            <h3>La version 3.4 du Client unifié Shadow</h3>
+          </article>
+          <article id="article3" class="col-4">
+            <button class="btn btn-warning mt-5">NEWS</button>
+            <h3>AMA avec le nouveau CTO: Jean Baptiste Kempf</h3>
+          </article>
         </row>
-        <row></row>
+        <row
+          class="container d-flex justify-content-around align-items-center row2"
+        >
+          <div class="col">
+            <h4 class="text-white">Toujours informé</h4>
+            <p class="mt-5 text-white-50">
+              Toutes les news de Shadow par mail, juste une fois toutes les deux
+              semaines. Nous non plus on aime pas les spams!
+            </p>
+            <input
+              type="text"
+              class="mt-3 pl-3 rounded text-white font-weight-bold"
+              placeholder="E-mail"
+            />
+            <button class="btn btn-light bg-secondary text-white ml-3">
+              S'INSCRIRE
+            </button>
+          </div>
+          <div class="col">
+            <h4 class="text-white">Toujours ensemble</h4>
+            <p class="mt-5 text-white-50">
+              Rejoins la conversation avec toute la communauté #TeamShadow sur
+              Discord et nos réseaux sociaux !
+            </p>
+            <section class="mt-4 d-flex justify-content-around">
+              <p class="h3 text-white"><i class="fab fa-discord mr-2"></i></p>
+              <p class="h3 text-white">
+                <i class="fab fa-facebook-square mr-2"></i>
+              </p>
+              <p class="h3 text-white">
+                <i class="fab fa-instagram-square mr-2"></i>
+              </p>
+              <p class="h3 text-white"><i class="fab fa-twitter mr-2"></i></p>
+              <p class="h3 text-white"><i class="fab fa-youtube mr-2"></i></p>
+              <p class="h3 text-white"><i class="fab fa-twitch mr-2"></i></p>
+            </section>
+          </div>
+        </row>
+        <div class="icon container d-flex justify-content-center mt-5">
+          <svg width="24" height="24" viewBox="0 0 12 12">
+            <g id="Objet_dynamique_vectoriel">
+              <path
+                class="st0"
+                fill="#FFFFFF"
+                d="M6 0C2.7 0 0 2.7 0 6c0 1.8.8 3.3 2 4.4-.1-.2-.1-.4-.1-.6 0-1.2 1-2.2 2.2-2.2s2.2 1 2.2 2.2c0 1-.6 1.8-1.5 2.1.4.1.8.1 1.2.1 3.3 0 6-2.7 6-6S9.3 0 6 0"
+              ></path>
+            </g>
+          </svg>
+        </div>
       </section>
     </main>
-    <footer></footer>
+    <footer class="bg-secondary pt-5">
+      <row class="menu container d-flex px-5">
+        <div class="col">
+          <div class="dropdown">
+            <button
+              class="btn btn-secondary dropdown-toggle"
+              type="button"
+              id="dropdownMenuButton"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              France Métropolitaine
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">France Métropolitaine</a>
+              <a class="dropdown-item" href="#">Belgique</a>
+              <a class="dropdown-item" href="#">Luxembourg</a>
+              <a class="dropdown-item" href="#">Germany</a>
+              <a class="dropdown-item" href="#">United Kingdom</a>
+              <a class="dropdown-item" href="#">United States</a>
+              <a class="dropdown-item" href="#">Switzerland (FR)</a>
+              <a class="dropdown-item" href="#">Switzerland (DE)</a>
+              <a class="dropdown-item" href="#">Netherlands</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <ul>
+            <li class="list-unstyled">
+              <a href="" class="text-white-50">Home</a>
+            </li>
+            <li class="list-unstyled">
+              <a href="" class="text-white-50">Fiche technique</a>
+            </li>
+            <li class="list-unstyled">
+              <a href="" class="text-white-50">Technologie</a>
+            </li>
+            <li class="list-unstyled">
+              <a href="" class="text-white-50">Shadow Ghost</a>
+            </li>
+            <li class="list-unstyled">
+              <a href="" class="text-white-50">Télécharger</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col">
+          <ul>
+            <li class="list-unstyled">
+              <a href="" class="text-white-50">Communauté</a>
+            </li>
+            <li class="list-unstyled">
+              <a href="" class="text-white-50">Précommande</a>
+            </li>
+            <li class="list-unstyled">
+              <a href="" class="text-white-50">Mon compte</a>
+            </li>
+            <li class="list-unstyled">
+              <a href="" class="text-white-50">Centre d'aide</a>
+            </li>
+            <li class="list-unstyled">
+              <a href="" class="text-white-50">F.A.Q</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col">
+          <ul>
+            <li class="list-unstyled">
+              <a href="" class="text-white-50">État du service</a>
+            </li>
+            <li class="list-unstyled">
+              <a href="" class="text-white-50">À propos de Shadow</a>
+            </li>
+            <li class="list-unstyled">
+              <a href="" class="text-white-50">On recrute!</a>
+            </li>
+            <li class="list-unstyled">
+              <a href="" class="text-white-50">Press Room</a>
+            </li>
+            <li class="list-unstyled">
+              <a href="" class="text-white-50">Écoles / Entreprise</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col">
+          <ul>
+            <li class="list-unstyled">
+              <a href="" class="text-white-50" class="">Partenariats</a>
+            </li>
+            <li class="list-unstyled">
+              <a href="" class="text-white-50" class="">Affiliation</a>
+            </li>
+          </ul>
+        </div>
+      </row>
+      <row class="container d-flex text-muted mt-4 justify-content-around">
+        <div class="col col-2">
+          <a href="" class="text-muted">©Shadow by Blade </a>
+        </div>
+        <div class="col col-2">
+          <a href="" class="text-muted">Conditions Générales d'utilisation</a>
+        </div>
+        <div class="col col-2">
+          <a href="" class="text-muted">Informations légales</a>
+        </div>
+        <div class="col col-2">
+          <a href="" class="text-muted">Politique de confidencialité</a>
+        </div>
+        <div class="col col-2">
+          <a href="" class="text-muted">Charte cookies</a>
+        </div>
+        <div class="col col-2">
+          <a href="" class="text-muted">Barême tarifaire</a>
+        </div>
+      </row>
+    </footer>
   </body>
 </html>
